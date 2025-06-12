@@ -1,0 +1,45 @@
+<div class="contact-container">
+  <div class="contact-hero animate__animated animate__fadeInDown">
+    <h1>Get in Touch</h1>
+    <p>We’d love to hear from you. Whether you have a question or just want to say hello, our team is ready to help!</p>
+    <button class="contact-us-btn" (click)="showForm = true">Contact Us</button>
+  </div>
+
+  <div class="contact-grid">
+    <!-- Contact Info -->
+    <div class="contact-info animate__animated animate__fadeInLeft">
+      <h2>Contact Information</h2>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:support@example.com">support@example.com</a></p>
+      <p><i class="fas fa-phone"></i> Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> Address: 123 Tech Street, Silicon Valley, CA</p>
+
+      <!-- Google Map Embed -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.073143070831!2d-121.94499752501495!3d37.41174603299027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc91859784433%3A0x9b52bd2fca94a4b2!2s123%20Technology%20Inc!5e0!3m2!1sen!2sin!4v1749453865336!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Contact Form (Conditional) -->
+    <div *ngIf="showForm" class="contact-form animate__animated animate__fadeInRight">
+      <h2>Send a Message</h2>
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <label>Name</label>
+        <input type="text" name="name" [(ngModel)]="formData.name" required />
+
+        <label>Email</label>
+        <input type="email" name="email" [(ngModel)]="formData.email" required />
+
+        <label>Message</label>
+        <textarea rows="5" name="message" [(ngModel)]="formData.message" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <button type="button" class="close-btn" (click)="showForm = false">Close</button>
+      </form>
+      <p *ngIf="successMessage" class="success-msg">{{ successMessage }}</p>
+    </div>
+  </div>
+</div>

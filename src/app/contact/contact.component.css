@@ -1,0 +1,147 @@
+.contact-container {
+  background-color: #121212;
+  color: white;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ffffffcc;
+}
+
+.contact-hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.contact-us-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.contact-us-btn:hover {
+  background-color: #ff85c1;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-info,
+.contact-form {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.2);
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(255, 105, 180, 0.5);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.contact-info p i {
+  margin-right: 0.5rem;
+  color: #ff69b4;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #e4e4e4;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 2px #ff69b4aa;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #ff85c1;
+}
+
+.close-btn {
+  background-color: #555;
+  margin-top: 0.5rem;
+}
+
+.close-btn:hover {
+  background-color: #777;
+}
+
+.success-msg {
+  margin-top: 1rem;
+  color: #7fff7f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.map-container {
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.2);
+}

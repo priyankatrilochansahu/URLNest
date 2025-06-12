@@ -1,0 +1,49 @@
+
+
+/* Navbar same as before */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  animation: spin 4s linear infinite;
+  margin-right: 15px;
+  margin-left: 20px;
+  filter: drop-shadow(0 0 6px #14c0ebbb); 
+}
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.site-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+.nav-right{
+  margin-right: 20px;
+}
+.nav-right a {
+  margin-left: 30px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-right a:hover {
+  color: #1bf0f0;
+}
