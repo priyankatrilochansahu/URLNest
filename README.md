@@ -33,6 +33,7 @@
 -  No external database used  
 - Links are **hardcoded** in the backend
 
+---
 
 ##  Backend Setup (Step-by-Step)
 
@@ -53,11 +54,13 @@
 Controllers/
 
 ├── searchcontroller.cs
+
 └── ValuesController.cs
 
 searchquery/
 
 ├── searchrequest.cs
+
 └── searchoutput.cs
 
 App_Start/
@@ -70,12 +73,13 @@ To allow requests from Angular frontend, install the CORS package.
 In Visual Studio, go to **Tools > NuGet Package Manager > Package Manager Console**  
 Then run:
 
-powershell
-```Install-Package Microsoft.AspNet.WebApi.Cors```
+```powershell
+Install-Package Microsoft.AspNet.WebApi.Cors
+```
 
 ---
 
-### ✅ Step 4: Build and Run
+###  Step 4: Build and Run
 
 1. Build the project.
 2. After successful build, click on the **green IIS Express** button to run the backend.
@@ -84,12 +88,56 @@ powershell
 
 ---
 
-### ✅ Step 5: Test API in Postman
+###  Step 5: Test API in Postman
 
 1. Open **Postman**
 2. Select method: 'POST'
 3. Use the API endpoint with a sample keyword:https://localhost:44349/api/search
 4. Click **Send**
-5. ✅ You will get a **JSON response** containing filtered hardcoded URLs.
+5. You will get a **JSON response** containing filtered hardcoded URLs.
+
+---
+
+##  Frontend Setup (Angular)
+
+###  Step 1: Install Angular  
+Open terminal and run the following command to install Angular:
+```bash
+npm install -g @angular/cli@<version>
+```
+###  Step 2: Create an Angular project
+run the following command to create a new Angular project:
+```bash
+npx @angular/cli@16.2.0 new my-app
+cd my-app
+ng version
+```
+Choose No for routing
+Choose CSS as the styling format
+
+### Step 3: Run the Angular App
+```bash
+ng serve
+```
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and distribute it for personal or commercial purposes.
+
+---
+
+## Preview
+
+---
+
+## 📬 Contact
+
+For any questions, feedback, or collaboration:
+Email: gudiii0444@gmail.com
+
+
 
 
