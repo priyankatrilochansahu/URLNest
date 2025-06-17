@@ -1,10 +1,10 @@
-# 🌐 URLNest
+#  URLNest
 
 **URLNest** is a simple and intuitive full-stack web application that allows users to search for hardcoded URLs based on a keyword. Built using **Angular** on the frontend and **.NET (C#)** on the backend, this project demonstrates frontend-backend integration and interactive UI behavior using TypeScript.
 
 ---
 
-## 🔧 Features
+##  Features
   
 - Search button triggers a backend request  
 - Returns a list of relevant **hardcoded links**  
@@ -14,29 +14,29 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
-### 🚀 Frontend
+###  Frontend
 
 - HTML  
 - CSS  
 - TypeScript  
 - **Angular Framework**
 
-### 🖥️ Backend
+###  Backend
 
 - **C#** using **.NET Core**    
 - ASP.NET Web API (.NET Framework)
 
-### 🗃️ Database
+###  Database
 
-- ❌ No external database used  
+-  No external database used  
 - Links are **hardcoded** in the backend
 
 
-## 🖥️ Backend Setup (Step-by-Step)
+##  Backend Setup (Step-by-Step)
 
-### ✅ Step 1: Create Project
+###  Step 1: Create Project
 
 1. Open **Visual Studio 2019**
 2. Click on **"Create a new project"**
@@ -48,27 +48,30 @@
 
 ---
 
-### ✅ Step 2: Folder Structure
+###  Step 2: Folder Structure
 
 Controllers/
+
 ├── searchcontroller.cs
 └── ValuesController.cs
 
 searchquery/
+
 ├── searchrequest.cs
 └── searchoutput.cs
 
 App_Start/
+
 └── WebApiConfig.cs
 
-### ✅ Step 3: Enable CORS
+###  Step 3: Enable CORS
 
 To allow requests from Angular frontend, install the CORS package.
 In Visual Studio, go to **Tools > NuGet Package Manager > Package Manager Console**  
 Then run:
 
-```powershell
-Install-Package Microsoft.AspNet.WebApi.Cors
+powershell
+```Install-Package Microsoft.AspNet.WebApi.Cors```
 
 ---
 
@@ -84,7 +87,7 @@ Install-Package Microsoft.AspNet.WebApi.Cors
 ### ✅ Step 5: Test API in Postman
 
 1. Open **Postman**
-2. Select method: `POST`
+2. Select method: 'POST'
 3. Use the API endpoint with a sample keyword:https://localhost:44349/api/search
 4. Click **Send**
 5. ✅ You will get a **JSON response** containing filtered hardcoded URLs.
