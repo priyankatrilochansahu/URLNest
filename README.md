@@ -47,7 +47,6 @@
 6. In the next window, choose template: **Web API**
 7. Click **Create**
 
----
 
 ###  Step 2: Folder Structure
 
@@ -77,16 +76,12 @@ Then run:
 Install-Package Microsoft.AspNet.WebApi.Cors
 ```
 
----
-
 ###  Step 4: Build and Run
 
 1. Build the project.
 2. After successful build, click on the **green IIS Express** button to run the backend.
 3. Visual Studio will launch your Web API in the browser with a URL like: https://localhost:44349/
 4. Copy this URL — you will need it to test the API or connect from frontend.
-
----
 
 ###  Step 5: Test API in Postman
 
@@ -131,12 +126,14 @@ Feel free to use, modify, and distribute it for personal or commercial purposes.
 
 ## Preview
 ![Screenshot 2025-06-12 112115](https://github.com/user-attachments/assets/8d46fcfd-274e-4740-ba7a-056bafc8e100)
+
 ![Screenshot 2025-06-12 112202](https://github.com/user-attachments/assets/fe586748-9abc-48be-a6fb-d1f9c5d63674)
+
 ![Screenshot 2025-06-12 112236](https://github.com/user-attachments/assets/1523c361-4b8a-4871-a506-2f9cc202908c)
 
 ---
 
-## 📬 Contact
+##  Contact
 
 For any questions, feedback, or collaboration:
 Email: gudiii0444@gmail.com
