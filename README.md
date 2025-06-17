@@ -130,6 +130,9 @@ Feel free to use, modify, and distribute it for personal or commercial purposes.
 ---
 
 ## Preview
+![Screenshot 2025-06-12 112115](https://github.com/user-attachments/assets/8d46fcfd-274e-4740-ba7a-056bafc8e100)
+![Screenshot 2025-06-12 112202](https://github.com/user-attachments/assets/fe586748-9abc-48be-a6fb-d1f9c5d63674)
+![Screenshot 2025-06-12 112236](https://github.com/user-attachments/assets/1523c361-4b8a-4871-a506-2f9cc202908c)
 
 ---
 
