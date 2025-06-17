@@ -54,8 +54,6 @@ Controllers/
 
 ├── searchcontroller.cs
 
-└── ValuesController.cs
-
 searchquery/
 
 ├── searchrequest.cs
