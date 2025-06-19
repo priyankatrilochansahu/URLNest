@@ -105,8 +105,8 @@ npx @angular/cli@16.2.0 new my-app
 cd my-app
 ng version
 ```
-Choose No for routing
-Choose CSS as the styling format
+Choose No for routing and
+choose CSS as the styling format
 
 ### Step 3: Run the Angular App
 ```bash
